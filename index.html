@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProGineer Job Application</title>
+</head>
+
+<body>
+    <header>
+        <h1>ProGineer Technologies</h1>
+        <p>Take your chance to join us</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Available Positions</h2>
+
+            <article>
+                <h3>DotNet Developer</h3>
+                <p>We are looking for a skilled DotNet Developer to join our team.</p>
+                <p><strong>Employment Type:</strong> Part-time</p>
+                <p><strong>Location Type:</strong> Hybrid</p>
+                <p><strong>Office:</strong> Nablus</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Qualification Matrix</h2>
+
+            <table>
+                <caption>Qualification Requirements</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Qualification</th>
+                        <th scope="col">Requirements</th>
+                        <th scope="col">Experience</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">C#</th>
+                        <td>Strong understanding of C#</td>
+                        <td>2+ years of experience</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">ASP.NET</th>
+                        <td>Experience with ASP.NET MVC </td>
+                        <td>2+ years of experience</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Job Application Form</h2>
+
+            <form action="/apply" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" minlength="3" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter exactly 10 digits"
+                        required>
+
+                    <label for="birthDate">Date of Birth:</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Professional Experience</legend>
+
+                    <input type="radio" id="junior" name="experience" value="junior" required>
+                    <label for="junior">0-2 Years</label>
+
+                    <input type="radio" id="mid" name="experience" value="mid">
+                    <label for="mid">3-5 Years</label>
+
+                    <input type="radio" id="senior" name="experience" value="senior">
+                    <label for="senior">5+ Years</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Position and Resume</legend>
+
+                    <label for="position">Applying For:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a position</option>
+                        <option value="dotnet">DotNet Developer</option>
+                    </select>
+
+                    <label for="resume">Upload Resume (PDF):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,application/pdf" required>
+                </fieldset>
+
+                <button type="submit">Submit Application</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ProGineer Technologies</p>
+    </footer>
+</body>
+
+</html>
